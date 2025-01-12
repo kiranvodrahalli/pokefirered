@@ -10,7 +10,6 @@ VictoryRoad_2F_EventScript_DoubleEdgeTutor::
 	setvar VAR_0x8005, MOVETUTOR_DOUBLE_EDGE
 	call EventScript_ChooseMoveTutorMon
 	goto_if_eq VAR_RESULT, FALSE, EventScript_DoubleEdgeDeclined
-	setflag FLAG_TUTOR_DOUBLE_EDGE
 	goto EventScript_DoubleEdgeTaught
 	end
 
@@ -36,7 +35,6 @@ EventScript_ThunderWaveTutor::
 	setvar VAR_0x8005, MOVETUTOR_THUNDER_WAVE
 	call EventScript_ChooseMoveTutorMon
 	goto_if_eq VAR_RESULT, FALSE, EventScript_ThunderWaveDeclined
-	setflag FLAG_TUTOR_THUNDER_WAVE
 	goto EventScript_ThunderWaveTaught
 	end
 
@@ -62,7 +60,6 @@ RockTunnel_B1F_EventScript_RockSlideTutor::
 	setvar VAR_0x8005, MOVETUTOR_ROCK_SLIDE
 	call EventScript_ChooseMoveTutorMon
 	goto_if_eq VAR_RESULT, FALSE, EventScript_RockSlideDeclined
-	setflag FLAG_TUTOR_ROCK_SLIDE
 	goto EventScript_RockSlideTaught
 	end
 
@@ -88,7 +85,6 @@ MtEmber_Exterior_EventScript_ExplosionTutor::
 	setvar VAR_0x8005, MOVETUTOR_EXPLOSION
 	call EventScript_ChooseMoveTutorMon
 	goto_if_eq VAR_RESULT, FALSE, EventScript_ExplosionDeclined
-	setflag FLAG_TUTOR_EXPLOSION
 	goto EventScript_ExplosionTaught
 	end
 
@@ -114,7 +110,6 @@ Route4_EventScript_MegaPunchTutor::
 	setvar VAR_0x8005, MOVETUTOR_MEGA_PUNCH
 	call EventScript_ChooseMoveTutorMon
 	goto_if_eq VAR_RESULT, FALSE, EventScript_MegaPunchDeclined
-	setflag FLAG_TUTOR_MEGA_PUNCH
 	goto EventScript_MegaPunchTaught
 	end
 
@@ -140,7 +135,6 @@ Route4_EventScript_MegaKickTutor::
 	setvar VAR_0x8005, MOVETUTOR_MEGA_KICK
 	call EventScript_ChooseMoveTutorMon
 	goto_if_eq VAR_RESULT, FALSE, EventScript_MegaKickDeclined
-	setflag FLAG_TUTOR_MEGA_KICK
 	goto EventScript_MegaKickTaught
 	end
 
@@ -166,7 +160,6 @@ EventScript_DreamEaterTutor::
 	setvar VAR_0x8005, MOVETUTOR_DREAM_EATER
 	call EventScript_ChooseMoveTutorMon
 	goto_if_eq VAR_RESULT, FALSE, EventScript_DreamEaterDeclined
-	setflag FLAG_TUTOR_DREAM_EATER
 	goto EventScript_DreamEaterTaught
 	end
 
@@ -192,7 +185,6 @@ EventScript_SoftboiledTutor::
 	setvar VAR_0x8005, MOVETUTOR_SOFT_BOILED
 	call EventScript_ChooseMoveTutorMon
 	goto_if_eq VAR_RESULT, FALSE, EventScript_SoftboiledDeclined
-	setflag FLAG_TUTOR_SOFT_BOILED
 	goto EventScript_SoftboiledTaught
 	end
 
@@ -218,7 +210,6 @@ FuchsiaCity_EventScript_SubstituteTutor::
 	setvar VAR_0x8005, MOVETUTOR_SUBSTITUTE
 	call EventScript_ChooseMoveTutorMon
 	goto_if_eq VAR_RESULT, FALSE, EventScript_SubstituteDeclined
-	setflag FLAG_TUTOR_SUBSTITUTE
 	goto EventScript_SubstituteTaught
 	end
 
@@ -244,7 +235,6 @@ SevenIsland_EventScript_SwordsDanceTutor::
 	setvar VAR_0x8005, MOVETUTOR_SWORDS_DANCE
 	call EventScript_ChooseMoveTutorMon
 	goto_if_eq VAR_RESULT, FALSE, EventScript_SwordsDanceDeclined
-	setflag FLAG_TUTOR_SWORDS_DANCE
 	goto EventScript_SwordsDanceTaught
 	end
 
@@ -270,7 +260,6 @@ PewterCity_Museum_1F_EventScript_SeismicTossTutor::
 	setvar VAR_0x8005, MOVETUTOR_SEISMIC_TOSS
 	call EventScript_ChooseMoveTutorMon
 	goto_if_eq VAR_RESULT, FALSE, EventScript_SeismicTossDeclined
-	setflag FLAG_TUTOR_SEISMIC_TOSS
 	goto EventScript_SeismicTossTaught
 	end
 
@@ -296,7 +285,6 @@ EventScript_CounterTutor::
 	setvar VAR_0x8005, MOVETUTOR_COUNTER
 	call EventScript_ChooseMoveTutorMon
 	goto_if_eq VAR_RESULT, FALSE, EventScript_CounterDeclined
-	setflag FLAG_TUTOR_COUNTER
 	goto EventScript_CounterTaught
 	end
 
@@ -322,7 +310,6 @@ EventScript_MetronomeTutor::
 	setvar VAR_0x8005, MOVETUTOR_METRONOME
 	call EventScript_ChooseMoveTutorMon
 	goto_if_eq VAR_RESULT, FALSE, EventScript_MetronomeDeclined
-	setflag FLAG_TUTOR_METRONOME
 	goto EventScript_MetronomeTaught
 	end
 
@@ -349,7 +336,6 @@ EventScript_MimicTutor::
 	faceplayer
 	goto_if_eq VAR_RESULT, 0, EventScript_MimicDeclined
 	removeitem ITEM_POKE_DOLL
-	setflag FLAG_TUTOR_MIMIC
 	goto EventScript_MimicTaught
 	end
 
@@ -385,7 +371,6 @@ FourIsland_House1_EventScript_BodySlamTutor::
 	setvar VAR_0x8005, MOVETUTOR_BODY_SLAM
 	call EventScript_ChooseMoveTutorMon
 	goto_if_eq VAR_RESULT, FALSE, EventScript_BodySlamDeclined
-	setflag FLAG_TUTOR_BODY_SLAM
 	goto EventScript_BodySlamTaught
 	end
 
@@ -447,13 +432,11 @@ CapeBrinkTutor_EventScript_TaughtMove::
 	specialvar VAR_RESULT, HasLearnedAllMovesFromCapeBrinkTutor
 	goto_if_eq VAR_RESULT, TRUE, CapeBrinkTutor_EventScript_LearnedAllMoves
 	msgbox Text_TaughtMove
-	setflag FLAG_TEMP_2
 	release
 	end
 
 CapeBrinkTutor_EventScript_LearnedAllMoves::
 	msgbox Text_PassedOnEverythingIKnow
-	setflag FLAG_LEARNED_ALL_MOVES_AT_CAPE_BRINK
 	release
 	end
 
