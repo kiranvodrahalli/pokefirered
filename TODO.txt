@@ -1,0 +1,5 @@
+0. Finish wild encounter randomizer.
+1. Finish implementing Roamer changes.
+2. Randomize Trainer teams as well, including bosses.
+3. Add Hoenn pokemon to SEVII islands postgame.
+4. Add rest of legendaries.

@@ -8,6 +8,14 @@ $(DATA_C_SUBDIR)/items.h: $(DATA_C_SUBDIR)/items.json $(DATA_C_SUBDIR)/items.jso
 
 $(C_BUILDDIR)/item.o: c_dep += $(DATA_C_SUBDIR)/items.h
 
+# TODO(kiranv): Auto-generate wild_encounters.json by running the python randomizer first.
+# Path to your Python script (adjust if necessary)
+PYTHON_SCRIPT = sensible_randomizer2.py
+
+# Rule to generate wild_encounters.json using the Python script
+$(DATA_C_SUBDIR)/wild_encounters.json: $(PYTHON_SCRIPT)
+	python3 $(PYTHON_SCRIPT) > $@
+
 AUTO_GEN_TARGETS += $(DATA_C_SUBDIR)/wild_encounters.h
 $(DATA_C_SUBDIR)/wild_encounters.h: $(DATA_C_SUBDIR)/wild_encounters.json $(DATA_C_SUBDIR)/wild_encounters.json.txt
 	$(JSONPROC) $^ $@
