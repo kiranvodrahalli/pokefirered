@@ -2,20 +2,12 @@ import json
 import random
 import numpy as np
 
-encounter_chart_path = "/Users/kiranv/home/code/pokefirered/src/data/wild_encounters.json"
+encounter_chart_path = "/Users/kiranv/home/code/pokefirered/src/data/wild_encounters_orig.json"
 
 habitat_template_path = "/Users/kiranv/home/code/pokefirered/src/data/habitat_template.json"
 
-randomized_encounters_path = "/Users/kiranv/home/code/pokefirered/src/data/randomized_encounters.json"
+randomized_encounters_path = "/Users/kiranv/home/code/pokefirered/src/data/wild_encounters.json"
 
-# plan: 
-# let's define a new wild_encounters.json with *new categories* of pokemon placeholders.
-# then at randomization time, we swap out the placeholders with samples from 
-# the tables defining those categories (which contain lists of pokemon).
-# we can use AI to generate both of these? perhaps.
-
-# for categories, we could also re-use existing pokedex categories. but
-# may be fun to be even more finegrained.
 
 # Pokemon Roster (Gen I and II, excluding legendaries, only base forms)
 pokemon_roster = [
@@ -588,7 +580,7 @@ def generate_habitat_template(original_encounters_file=encounter_chart_path, out
     Generates a habitat template JSON file from the original encounter data.
 
     Args:
-        original_encounters_file: Path to the original wild_encounters.json file.
+        original_encounters_file: Path to the wild_encounters_orig.json file.
         output_template_file: Path to save the new habitat template JSON file.
     """
 
