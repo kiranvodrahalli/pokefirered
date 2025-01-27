@@ -1,3 +1,5 @@
+0. Check fishing implementation + allow for fishing rods early. 
+0.5. Check rock smash encounters and update.
 1. Finish implementing Roamer changes. Maybe set so that roamers get EventScript_ReleaseEnd
    mid-game?
 2. Randomize Trainer teams as well, including bosses and adjust leveling. (see above)
@@ -11,8 +13,9 @@
      Could use these to also randomize leveling, and tie leveling to gyms/trainer encounter randomization.
      Gym/trainer/etc battle randomization could also be tied to ecological area where they show up + extras,
      so it feels like a true random version of the game.
-2.5. Also adjust leveling of encounters. (see above)
-3. Add Hoenn pokemon to SEVII islands postgame.
-4. Add rest of legendaries.
-5. Could consider removing progress blocks and randomizing
+3. Randomize starter choices - allow Gen I/II starters, Pikachu, Eevee. Only one of each
+   type in a given set of 3 starters.
+4. Add Hoenn pokemon to SEVII islands postgame.
+5. Add rest of legendaries.
+6. Could consider removing progress blocks and randomizing
    gym leader level ordering.
