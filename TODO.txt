@@ -1,5 +1,18 @@
-0. Finish wild encounter randomizer.
-1. Finish implementing Roamer changes.
-2. Randomize Trainer teams as well, including bosses.
+1. Finish implementing Roamer changes. Maybe set so that roamers get EventScript_ReleaseEnd
+   mid-game?
+2. Randomize Trainer teams as well, including bosses and adjust leveling. (see above)
+2.2. each trainer class can have associated "sensible" distributions of pokemon to sample from.
+     each specific trainer may also have associated nearby routes.
+     idea: for a given trainer, sample from nearby route encounters (generated random sample) for
+     subset of the team. then for rest or the team, sample from broader sensible dist for trainer class.
+     more diversity + cohesion for trainer teams.
+     can also have different "evolution levels" from wild "evolution levels" to evolve pokemon earlier.
+     could consider adding some special trainers from johto like gym leaders.
+     Could use these to also randomize leveling, and tie leveling to gyms/trainer encounter randomization.
+     Gym/trainer/etc battle randomization could also be tied to ecological area where they show up + extras,
+     so it feels like a true random version of the game.
+2.5. Also adjust leveling of encounters. (see above)
 3. Add Hoenn pokemon to SEVII islands postgame.
 4. Add rest of legendaries.
+5. Could consider removing progress blocks and randomizing
+   gym leader level ordering.
