@@ -99,477 +99,598 @@ habitat_types = {
 # Note that rock_smash_mons are Pokemon that can be found by breaking open rocks.
 # For each encounter type, we provide a list of possible Pokemon habitats to 
 # sample from for randomization purposes.
-# TODO(kiranv): Check that every single map location in wild_encounters.json
-# is present as a key in this dictionary, with all encounter types mapped to a list
-# of habitats from habitat_types.
 encounter_mapping = {
     "MAP_SEVEN_ISLAND_TANOBY_RUINS_MONEAN_CHAMBER": {
         "land_mons": ["RuinsLate"],
+        "game_stage": "postgame",
     },
     "MAP_SEVEN_ISLAND_TANOBY_RUINS_LIPTOO_CHAMBER": {
         "land_mons": ["RuinsLate"],
+        "game_stage": "postgame",
     },
     "MAP_SEVEN_ISLAND_TANOBY_RUINS_WEEPTH_CHAMBER": {
         "land_mons": ["RuinsLate"],
+        "game_stage": "postgame",
     },
     "MAP_SEVEN_ISLAND_TANOBY_RUINS_DILFORD_CHAMBER": {
         "land_mons": ["RuinsLate"],
+        "game_stage": "postgame",
     },
     "MAP_SEVEN_ISLAND_TANOBY_RUINS_SCUFIB_CHAMBER": {
         "land_mons": ["RuinsLate"],
+        "game_stage": "postgame",
     },
     "MAP_SEVEN_ISLAND_TANOBY_RUINS_RIXY_CHAMBER": {
         "land_mons": ["RuinsLate"],
+        "game_stage": "postgame",
     },
     "MAP_SEVEN_ISLAND_TANOBY_RUINS_VIAPOIS_CHAMBER": {
         "land_mons": ["RuinsLate"],
+        "game_stage": "postgame",
     },
     "MAP_VIRIDIAN_FOREST": {
         "land_mons": ["ForestEarly"],
+        "game_stage": "early",
     },
     "MAP_MT_MOON_1F": {
         "land_mons": ["CaveEntranceEarly", "MountainPeakEarly"],
+        "game_stage": "early",
     },
     "MAP_MT_MOON_B1F": {
         "land_mons": ["CaveDepthEarly"],
+        "game_stage": "early",
     },
     "MAP_MT_MOON_B2F": {
         "land_mons": ["CaveDepthEarly"],
+        "game_stage": "early",
     },
     "MAP_SSANNE_EXTERIOR": {
         "water_mons": ["ShallowSeaSurf"],
         "fishing_mons": ["ShallowSeaFish"],
+        "game_stage": "mid",
     },
     "MAP_DIGLETTS_CAVE_B1F": {
         "land_mons": ["CaveDepthMid"],
+        "game_stage": "mid",
     },
     "MAP_VICTORY_ROAD_1F": {
         "land_mons": ["CaveDepthLate", "MountainPeakLate"],
+        "game_stage": "late",
     },
     "MAP_VICTORY_ROAD_2F": {
         "land_mons": ["CaveDepthLate", "MountainPeakLate"],
+        "game_stage": "late",
     },
     "MAP_VICTORY_ROAD_3F": {
         "land_mons": ["CaveDepthLate", "MountainPeakLate"],
+        "game_stage": "late",
     },
     "MAP_POKEMON_MANSION_1F": {
         "land_mons": ["MansionEarly"],
+        "game_stage": "late",
     },
     "MAP_POKEMON_MANSION_2F": {
         "land_mons": ["MansionMid"],
+        "game_stage": "late",
     },
     "MAP_POKEMON_MANSION_3F": {
         "land_mons": ["MansionMid"],
+        "game_stage": "late",
     },
     "MAP_POKEMON_MANSION_B1F": {
         "land_mons": ["MansionLate"],
+        "game_stage": "late",
     },
     "MAP_SAFARI_ZONE_CENTER": {
         "land_mons": ["Safari4"],
         "water_mons": ["SafariSurf"],
         "fishing_mons": ["SafariFish"],
+        "game_stage": "late",
     },
     "MAP_SAFARI_ZONE_EAST": {
         "land_mons": ["Safari1"],
         "water_mons": ["SafariSurf"],
         "fishing_mons": ["SafariFish"],
+        "game_stage": "late",
     },
     "MAP_SAFARI_ZONE_NORTH": {
         "land_mons": ["Safari2"],
         "water_mons": ["SafariSurf"],
         "fishing_mons": ["SafariFish"],
+        "game_stage": "late",
     },
     "MAP_SAFARI_ZONE_WEST": {
         "land_mons": ["Safari3"],
         "water_mons": ["SafariSurf"],
         "fishing_mons": ["SafariFish"],
+        "game_stage": "late",
     },
     "MAP_CERULEAN_CAVE_1F": {
         "land_mons": ["CaveDepthLate", "CeruleanCave"],
         "water_mons": ["UndergroundLakeSurf"],
         "rock_smash_mons": ["CaveDepthLate"],
         "fishing_mons": ["UndergroundLakeFish"],
+        "game_stage": "postgame",
     },
     "MAP_CERULEAN_CAVE_2F": {
         "land_mons": ["CaveDepthLate", "CeruleanCave"],
         "rock_smash_mons": ["CaveDepthLate"],
+        "game_stage": "postgame",
     },
     "MAP_CERULEAN_CAVE_B1F": {
         "land_mons": ["CaveDepthLate", "CeruleanCave"],
         "water_mons": ["UndergroundLakeSurf"],
         "rock_smash_mons": ["CaveDepthLate"],
         "fishing_mons": ["UndergroundLakeFish"],
+        "game_stage": "postgame",
     },
     "MAP_ROCK_TUNNEL_1F": {
         "land_mons": ["CaveDepthMid", "MountainPeakMid"],
         "rock_smash_mons": ["CaveDepthMid"],
+        "game_stage": "mid",
     },
     "MAP_ROCK_TUNNEL_B1F": {
         "land_mons": ["CaveDepthMid", "RuinsMid"],
         "rock_smash_mons": ["CaveDepthMid"],
+        "game_stage": "mid",
     },
     "MAP_SEAFOAM_ISLANDS_1F": {
         "land_mons": ["IcyEarly"],
+        "game_stage": "mid",
     },
     "MAP_SEAFOAM_ISLANDS_B1F": {
         "land_mons": ["IcyMid"],
+        "game_stage": "mid",
     },
     "MAP_SEAFOAM_ISLANDS_B2F": {
         "land_mons": ["IcyMid"],
+        "game_stage": "mid",
     },
     "MAP_SEAFOAM_ISLANDS_B3F": {
         "land_mons": ["IcyLate"],
         "water_mons": ["UndergroundLakeSurf"],
         "fishing_mons": ["UndergroundLakeFish"],
+        "game_stage": "mid",
     },
     "MAP_SEAFOAM_ISLANDS_B4F": {
         "land_mons": ["IcyLate"],
         "water_mons": ["UndergroundLakeSurf"],
         "fishing_mons": ["UndergroundLakeFish"],
+        "game_stage": "mid",
     },
     "MAP_POKEMON_TOWER_3F": {
         "land_mons": ["RuinsEarly"],
+        "game_stage": "mid",
     },
     "MAP_POKEMON_TOWER_4F": {
         "land_mons": ["RuinsEarly"],
+        "game_stage": "mid",
     },
     "MAP_POKEMON_TOWER_5F": {
         "land_mons": ["RuinsMid"],
+        "game_stage": "mid",
     },
     "MAP_POKEMON_TOWER_6F": {
         "land_mons": ["RuinsMid"],
+        "game_stage": "mid",
     },
     "MAP_POKEMON_TOWER_7F": {
         "land_mons": ["RuinsMid"],
+        "game_stage": "mid",
     },
     "MAP_POWER_PLANT": {
         "land_mons": ["PowerPlant"],
+        "game_stage": "mid",
     },
     "MAP_MT_EMBER_EXTERIOR": {
         "land_mons": ["VolcanicMid", "MountainFootMid", "MountainPeakMid"],
         "rock_smash_mons": ["VolcanicEarly"],
+        "game_stage": "late",
     },
     "MAP_MT_EMBER_SUMMIT_PATH_1F": {
         "land_mons": ["VolcanicMid", "MountainPeakMid"],
+        "game_stage": "late",
     },
     "MAP_MT_EMBER_SUMMIT_PATH_2F": {
         "land_mons": ["VolcanicMid", "MountainPeakMid"],
         "rock_smash_mons": ["VolcanicMid"],
+        "game_stage": "late",
     },
     "MAP_MT_EMBER_SUMMIT_PATH_3F": {
         "land_mons": ["VolcanicMid", "MountainPeakMid"],
+        "game_stage": "late",
     },
     "MAP_MT_EMBER_RUBY_PATH_1F": {
         "land_mons": ["VolcanicLate", "MountainPeakLate"],
         "rock_smash_mons": ["VolcanicLate"],
+        "game_stage": "postgame",
     },
     "MAP_MT_EMBER_RUBY_PATH_B1F": {
         "land_mons": ["VolcanicLate", "MountainPeakLate"],
         "rock_smash_mons": ["VolcanicLate"],
+        "game_stage": "postgame",
     },
     "MAP_MT_EMBER_RUBY_PATH_B2F": {
         "land_mons": ["VolcanicLate", "MountainPeakLate"],
         "rock_smash_mons": ["VolcanicLate"],
+        "game_stage": "postgame",
     },
     "MAP_MT_EMBER_RUBY_PATH_B3F": {
         "land_mons": ["VolcanicLate", "MountainPeakLate"],
         "rock_smash_mons": ["VolcanicLate"],
+        "game_stage": "postgame",
     },
     "MAP_MT_EMBER_RUBY_PATH_B1F_STAIRS": {
         "land_mons": ["VolcanicLate", "MountainPeakLate"],
         "rock_smash_mons": ["VolcanicLate"],
+        "game_stage": "postgame",
     },
     "MAP_MT_EMBER_RUBY_PATH_B2F_STAIRS": {
         "land_mons": ["VolcanicLate", "MountainPeakLate"],
         "rock_smash_mons": ["VolcanicLate"],
+        "game_stage": "postgame",
     },
     "MAP_THREE_ISLAND_BERRY_FOREST": {
         "land_mons": ["ForestLate"],
         "water_mons": ["LakeSurf"],
         "fishing_mons": ["LakeFish"],
+        "game_stage": "late",
     },
     "MAP_FOUR_ISLAND_ICEFALL_CAVE_ENTRANCE": {
         "land_mons": ["IcyLate"],
         "water_mons": ["UndergroundLakeSurf"],
         "fishing_mons": ["UndergroundLakeFish"],
+        "game_stage": "postgame",
     },
     "MAP_FOUR_ISLAND_ICEFALL_CAVE_1F": {
         "land_mons": ["IcyEarly"],
+        "game_stage": "postgame",
     },
     "MAP_FOUR_ISLAND_ICEFALL_CAVE_B1F": {
         "land_mons": ["IcyMid"],
+        "game_stage": "postgame",
     },
     "MAP_FOUR_ISLAND_ICEFALL_CAVE_BACK": {
         "land_mons": ["IcyLate"],
         "water_mons": ["DeepSeaSurf"],
         "fishing_mons": ["DeepSeaFish"],
+        "game_stage": "postgame",
     },
     "MAP_SIX_ISLAND_PATTERN_BUSH": {
         "land_mons": ["ForestEdgeMid"],
+        "game_stage": "postgame",
     },
     "MAP_FIVE_ISLAND_LOST_CAVE_ROOM1": {
         "land_mons": ["CaveDepthLate"],
+        "game_stage": "postgame",
     },
     "MAP_FIVE_ISLAND_LOST_CAVE_ROOM2": {
         "land_mons": ["CaveDepthLate"],
+        "game_stage": "postgame",
     },
     "MAP_FIVE_ISLAND_LOST_CAVE_ROOM3": {
         "land_mons": ["CaveDepthLate"],
+        "game_stage": "postgame",
     },
     "MAP_FIVE_ISLAND_LOST_CAVE_ROOM4": {
         "land_mons": ["CaveDepthLate"],
+        "game_stage": "postgame",
     },
     "MAP_FIVE_ISLAND_LOST_CAVE_ROOM5": {
         "land_mons": ["CaveDepthLate"],
+        "game_stage": "postgame",
     },
     "MAP_FIVE_ISLAND_LOST_CAVE_ROOM6": {
         "land_mons": ["CaveDepthLate"],
+        "game_stage": "postgame",
     },
     "MAP_FIVE_ISLAND_LOST_CAVE_ROOM7": {
         "land_mons": ["CaveDepthLate"],
+        "game_stage": "postgame",
     },
     "MAP_FIVE_ISLAND_LOST_CAVE_ROOM8": {
         "land_mons": ["CaveDepthLate"],
+        "game_stage": "postgame",
     },
     "MAP_FIVE_ISLAND_LOST_CAVE_ROOM9": {
         "land_mons": ["CaveDepthLate"],
+        "game_stage": "postgame",
     },
     "MAP_FIVE_ISLAND_LOST_CAVE_ROOM10": {
         "land_mons": ["CaveDepthLate"],
+        "game_stage": "postgame",
     },
     "MAP_FIVE_ISLAND_LOST_CAVE_ROOM11": {
         "land_mons": ["CaveDepthLate"],
+        "game_stage": "postgame",
     },
     "MAP_FIVE_ISLAND_LOST_CAVE_ROOM12": {
         "land_mons": ["CaveDepthLate"],
+        "game_stage": "postgame",
     },
     "MAP_FIVE_ISLAND_LOST_CAVE_ROOM13": {
         "land_mons": ["CaveDepthLate"],
+        "game_stage": "postgame",
     },
     "MAP_FIVE_ISLAND_LOST_CAVE_ROOM14": {
         "land_mons": ["CaveDepthLate"],
+        "game_stage": "postgame",
     },
     "MAP_ONE_ISLAND_KINDLE_ROAD": {
         "land_mons": ["PlainsLate", "MountainFootLate"],
         "water_mons": ["ShallowSeaSurf"],
         "rock_smash_mons": ["MountainFootLate"],
         "fishing_mons": ["ShallowSeaFish"],
+        "game_stage": "late",
     },
     "MAP_ONE_ISLAND_TREASURE_BEACH": {
         "land_mons": ["PlainsLate", "MeadowLate"],
         "water_mons": ["ShallowSeaSurf"],
         "fishing_mons": ["ShallowSeaFish"],
+        "game_stage": "late",
     },
     "MAP_TWO_ISLAND_CAPE_BRINK": {
         "land_mons": ["MeadowLate"],
         "water_mons": ["LakeSurf"],
         "fishing_mons": ["LakeFish"],
+        "game_stage": "late",
     },
     "MAP_THREE_ISLAND_BOND_BRIDGE": {
         "land_mons": ["MeadowLate"],
         "water_mons": ["ShallowSeaSurf"],
         "fishing_mons": ["ShallowSeaFish"],
+        "game_stage": "late",
     },
     "MAP_THREE_ISLAND_PORT": {
         "land_mons": ["MeadowLate"],
+        "game_stage": "late",
     },
     "MAP_FIVE_ISLAND_RESORT_GORGEOUS": {
         "water_mons": ["ShallowSeaSurf"],
         "fishing_mons": ["ShallowSeaFish"],
+        "game_stage": "postgame",
     },
     "MAP_FIVE_ISLAND_WATER_LABYRINTH": {
         "water_mons": ["ShallowSeaSurf"],
         "fishing_mons": ["ShallowSeaFish"],
+        "game_stage": "postgame",
     },
     "MAP_FIVE_ISLAND_MEADOW": {
         "land_mons": ["MeadowLate"],
         "water_mons": ["ShallowSeaSurf"],
         "fishing_mons": ["ShallowSeaFish"],
+        "game_stage": "postgame",
     },
     "MAP_FIVE_ISLAND_MEMORIAL_PILLAR": {
         "land_mons": ["MeadowEarly"],
         "water_mons": ["ShallowSeaSurf"],
         "fishing_mons": ["ShallowSeaFish"],
+        "game_stage": "postgame",
     },
     "MAP_SIX_ISLAND_OUTCAST_ISLAND": {
         "water_mons": ["ShallowSeaSurf"],
         "fishing_mons": ["ShallowSeaFish"],
+        "game_stage": "postgame",
     },
     "MAP_SIX_ISLAND_GREEN_PATH": {
         "water_mons": ["ShallowSeaSurf"],
         "fishing_mons": ["ShallowSeaFish"],
+        "game_stage": "postgame",
     },
     "MAP_SIX_ISLAND_WATER_PATH": {
         "land_mons": ["MeadowLate"],
         "water_mons": ["ShallowSeaSurf"],
         "fishing_mons": ["ShallowSeaFish"],
+        "game_stage": "postgame",
     },
     "MAP_SIX_ISLAND_RUIN_VALLEY": {
         "land_mons": ["RuinsMid"],
         "water_mons": ["LakeSurf"],
         "fishing_mons": ["LakeFish"],
+        "game_stage": "postgame",
     },
     "MAP_SEVEN_ISLAND_TRAINER_TOWER": {
         "water_mons": ["ShallowSeaSurf"],
         "fishing_mons": ["ShallowSeaFish"],
+        "game_stage": "postgame",
     },
     "MAP_SEVEN_ISLAND_SEVAULT_CANYON_ENTRANCE": {
         "land_mons": ["MountainFootLate"],
+        "game_stage": "postgame",
     },
     "MAP_SEVEN_ISLAND_SEVAULT_CANYON": {
         "land_mons": ["MountainPeakLate"],
         "rock_smash_mons": ["MountainPeakLate"],
+        "game_stage": "postgame",
     },
     "MAP_SEVEN_ISLAND_TANOBY_RUINS": {
         "water_mons": ["ShallowSeaSurf"],
         "fishing_mons": ["ShallowSeaFish"],
+        "game_stage": "postgame",
     },
     "MAP_ROUTE1": {
         "land_mons": ["PlainsEarly", "CityOutskirtsEarly"],
+        "game_stage": "early",
     },
     "MAP_ROUTE2": {
         "land_mons": ["ForestEdgeEarly", "CityOutskirtsEarly"],
+        "game_stage": "early",
     },
     "MAP_ROUTE3": {
         "land_mons": ["PlainsEarly", "CityOutskirtsEarly", "MountainFootEarly"],
+        "game_stage": "early",
     },
     "MAP_ROUTE4": {
         "land_mons": ["MountainFootEarly"],
         "water_mons": ["RiverSurf"],
         "fishing_mons": ["RiverFish"],
+        "game_stage": "early",
     },
     "MAP_ROUTE5": {
         "land_mons": ["MeadowEarly", "PlainsMid", "CityOutskirtsEarly"],
+        "game_stage": "early",
     },
     "MAP_ROUTE6": {
         "land_mons": ["MeadowEarly", "PlainsMid", "CityOutskirtsMid"],
         "water_mons": ["RiverSurf"],
         "fishing_mons": ["RiverFish"],
+        "game_stage": "mid",
     },
     "MAP_ROUTE7": {
         "land_mons": ["CityOutskirtsMid", "MeadowMid"],
+        "game_stage": "mid",
     },
     "MAP_ROUTE8": {
         "land_mons": ["CityOutskirtsMid", "MeadowMid", "RuinsEarly"],
+        "game_stage": "mid",
     },
     "MAP_ROUTE9": {
         "land_mons": ["MountainFootEarly", "PlainsMid"],
+        "game_stage": "mid",
     },
     "MAP_ROUTE10": {
         "land_mons": ["MountainFootEarly", "RuinsEarly"],
         "water_mons": ["RiverSurf"],
         "fishing_mons": ["RiverFish"],
+        "game_stage": "mid",
     },
     "MAP_ROUTE11": {
         "land_mons": ["MeadowMid", "PlainsMid", "CityOutskirtsMid"],
         "water_mons": ["ShallowSeaSurf"],
         "fishing_mons": ["ShallowSeaFish"],
+        "game_stage": "mid",
     },
     "MAP_ROUTE12": {
         "land_mons": ["MeadowMid"],
         "water_mons": ["ShallowSeaSurf"],
         "fishing_mons": ["ShallowSeaFish"],
+        "game_stage": "mid",
     },
     "MAP_ROUTE13": {
         "land_mons": ["MeadowMid", "PlainsMid"],
         "water_mons": ["ShallowSeaSurf"],
         "fishing_mons": ["ShallowSeaFish"],
+        "game_stage": "mid",
     },
     "MAP_ROUTE14": {
         "land_mons": ["MeadowMid", "PlainsMid"],
+        "game_stage": "mid",
     },
     "MAP_ROUTE15": {
         "land_mons": ["PlainsMid", "CityOutskirtsMid"],
+        "game_stage": "mid",
     },
     "MAP_ROUTE16": {
         "land_mons": ["PlainsMid", "CityOutskirtsMid"],
+        "game_stage": "mid",
     },
     "MAP_ROUTE17": {
         "land_mons": ["PlainsMid"],
+        "game_stage": "mid",
     },
     "MAP_ROUTE18": {
         "land_mons": ["PlainsMid", "MeadowMid"],
+        "game_stage": "mid",
     },
     "MAP_ROUTE19": {
         "water_mons": ["ShallowSeaSurf"],
         "fishing_mons": ["ShallowSeaFish"],
+        "game_stage": "mid",
     },
     "MAP_ROUTE20": {
         "water_mons": ["DeepSeaSurf"],
         "fishing_mons": ["DeepSeaFish"],
+        "game_stage": "late",
     },
     "MAP_ROUTE21_NORTH": {
         "land_mons": ["MeadowLate", "CityOutskirtsLate"],
         "water_mons": ["ShallowSeaSurf"],
         "fishing_mons": ["ShallowSeaFish"],
+        "game_stage": "late",
     },
     "MAP_ROUTE21_SOUTH": {
         "land_mons": ["PlainsLate"],
         "water_mons": ["DeepSeaSurf"],
         "fishing_mons": ["DeepSeaFish"],
+        "game_stage": "late",
     },
     "MAP_ROUTE22": {
         "land_mons": ["PlainsEarly"],
         "water_mons": ["LakeSurf"],
         "fishing_mons": ["LakeFish"],
+        "game_stage": "early",
     },
     "MAP_ROUTE23": {
         "land_mons": ["CaveEntranceLate", "MountainFootLate"],
         "water_mons": ["RiverSurf"],
         "fishing_mons": ["RiverFish"],
+        "game_stage": "late",
     },
     "MAP_ROUTE24": {
         "land_mons": ["ForestEdgeMid", "MeadowEarly"],
         "water_mons": ["RiverSurf"],
         "fishing_mons": ["RiverFish"],
+        "game_stage": "early",
     },
     "MAP_ROUTE25": {
         "land_mons": ["ForestEdgeMid", "MeadowEarly"],
         "water_mons": ["LakeSurf"],
         "fishing_mons": ["LakeFish"],
+        "game_stage": "early",
     },
     "MAP_PALLET_TOWN": {
         "water_mons": ["ShallowSeaSurf"],
         "fishing_mons": ["ShallowSeaFish"],
+        "game_stage": "early",
     },
     "MAP_VIRIDIAN_CITY": {
         "water_mons": ["LakeSurf"],
         "fishing_mons": ["LakeFish"],
+        "game_stage": "late",
     },
     "MAP_CERULEAN_CITY": {
         "water_mons": ["RiverSurf"],
         "fishing_mons": ["RiverFish"],
+        "game_stage": "early",
     },
     "MAP_VERMILION_CITY": {
         "water_mons": ["ShallowSeaSurf"],
         "fishing_mons": ["ShallowSeaFish"],
+        "game_stage": "mid",
     },
     "MAP_CELADON_CITY": {
         "water_mons": ["LakeSurf"],
         "fishing_mons": ["LakeFish"],
+        "game_stage": "mid",
     },
     "MAP_FUCHSIA_CITY": {
         "water_mons": ["LakeSurf"],
         "fishing_mons": ["LakeFish"],
+        "game_stage": "mid",
     },
     "MAP_CINNABAR_ISLAND": {
         "water_mons": ["ShallowSeaSurf"],
         "fishing_mons": ["ShallowSeaFish"],
+        "game_stage": "late",
     },
     "MAP_ONE_ISLAND": {
         "water_mons": ["ShallowSeaSurf"],
         "fishing_mons": ["ShallowSeaFish"],
+        "game_stage": "late",
     },
     "MAP_FOUR_ISLAND": {
         "water_mons": ["LakeSurf"],
         "fishing_mons": ["LakeFish"],
+        "game_stage": "postgame",
     },
     "MAP_FIVE_ISLAND": {
         "water_mons": ["ShallowSeaSurf"],
         "fishing_mons": ["ShallowSeaFish"],
+        "game_stage": "postgame",
     },
     "MAP_SIX_ISLAND_ALTERING_CAVE": {
         "land_mons": ["CaveDepthLate"],
+        "game_stage": "postgame",
     },
 }
 
@@ -2843,11 +2964,6 @@ def get_evolution_stage(base_pokemon, level):
 
     return current_pokemon
 
-# TODO(kiranv): add checks that all 251 catchable (exclude legends) are present in the current randomized map before postgame.
-# If the check fails, make a small number of corrections so that every non-legendary Pokemon in Gen I and II is catchable
-# in the encounter table.
-# TODO(kiranv): When randomizing, check the level of the encounter. If the encounter level
-# is high, consider evolving the base stage to the appropriate form, with some probability.
 def randomize_encounters(template_file=habitat_template_path, habitat_mapping=habitat_mapping, output_file=randomized_encounters_path):
     """
     Randomizes the encounters based on the habitat template and mapping,
@@ -2860,22 +2976,15 @@ def randomize_encounters(template_file=habitat_template_path, habitat_mapping=ha
     """
     with open(template_file, 'r') as f:
         data = json.load(f)
-
-    # TODO(kiranv): 
-    # 1. First sample a unique set of Pokemon that will always have encounters in many 
-    #    instances of a given habitat. Like Tentacool, Rattata, Zubat, Pidgey, etc.
-    #    These will be used to fill rest of encounter table in a specific map loc.
-    # 2. For each new map loc (randomized order), sample (4?) unique Pokemon to show up
-    #    (keeping track, so that we fill all Pokemon in dex before elite 4).
-    # This will ensure both some homogeneity/ character to sampled region, while having
-    # interesting rare encounters.
-    # 3. Can choose 2 of unique 4 sampled to be "rare", and 2 to be more common, each time.
-
-    # TODO(kiranv):
-    # Sample 4 common encounters for each environment type. These will always be added.
-    # Then, after the 4 common encounters are created for each environment type,
-    # sample 4 more to fill in.
-    # finally, the last 4 slots can be filled in the "missing pokemon" round.
+    
+    # Sample diversity levels for each location.
+    diversities = ['low', 'med', 'high']
+    encounterloc_diversity = {}
+    for group in data["wild_encounter_groups"]:
+        for encounter in group["encounters"]:
+            mapname = encounter["map"]
+            if mapname not in encounterloc_diversity:
+                encounterloc_diversity[mapname] = random.choices(diversities, [4, 4, 2])[0]
 
     num_common_pokemon_per_habitat = 4
     common_pokemon = {}
@@ -2901,6 +3010,9 @@ def randomize_encounters(template_file=habitat_template_path, habitat_mapping=ha
             # Check if encounter location is accessible pre-Elite Four.
             is_pre_elite_four_loc = is_pre_elite_four(encounter["map"])
             print(f"Is Pre-E4?: {is_pre_elite_four_loc}")
+            mapname = encounter["map"]
+            diversity = encounterloc_diversity[mapname]
+            print(f"Diversity Level: {diversity}")
             for key in ['land_mons', 'water_mons', 'rock_smash_mons', 'fishing_mons']:
                 if key in encounter:
                     print(f"Assigning key {key}")
@@ -2923,24 +3035,34 @@ def randomize_encounters(template_file=habitat_template_path, habitat_mapping=ha
                     
                     probs = np.array(weights)/sum(weights)
                     
-                    # First sample the 4 common pokemon uniformly.
-                    num_common_pokemon = 4
+                    # First sample the common pokemon uniformly.
+                    num_common_pokemon = 0
+                    if diversity == "low":
+                        num_common_pokemon = 2
+                    elif diversity == "med" or diversity == "high":
+                        num_common_pokemon = 4
+                    
                     sampled_pokemon = []
                     common_sample = np.random.choice(possible_common_pokemon, size=num_common_pokemon, replace=False)
                     print(f"\nCommon Sample: {common_sample}")
                         
 
-                    # Sample 4 more pokemon from general list.
+                    # Sample more pokemon from general list.
+                    how_many_more_to_sample = 0
+                    if diversity == "low":
+                        how_many_more_to_sample = 2
+                    elif diversity == "med" or diversity == "high":
+                        how_many_more_to_sample = 4
                     # This time we allow for sampling with replacement.
-                    four_more = np.random.choice(possible_pokemon, size=4, p=probs, replace=True)
-                    print(f"Four more: {four_more}")
+                    four_more = np.random.choice(possible_pokemon, size=how_many_more_to_sample, p=probs, replace=True)
+                    print(f"{how_many_more_to_sample} more: {four_more}")
 
                     sampled_pokemon = common_sample.tolist() + four_more.tolist()
                     if is_pre_elite_four_loc:
                         for pokemon in sampled_pokemon:
                             pre_elite_four_pokemon.add(pokemon)
                     
-                    print(f"Sampled Pokemon (first 8): {sampled_pokemon}")
+                    print(f"Sampled Pokemon (first {num_common_pokemon + how_many_more_to_sample}): {sampled_pokemon}")
 
                     encounter[key]["mons"] = []
                     for i in range(len(sampled_pokemon)):
@@ -3008,9 +3130,16 @@ def randomize_encounters(template_file=habitat_template_path, habitat_mapping=ha
             # Check if encounter location is accessible pre-Elite Four.
             is_pre_elite_four_loc = is_pre_elite_four(encounter["map"])
             print(f"Is Pre-E4?: {is_pre_elite_four_loc}")
+            mapname = encounter["map"]
+            diversity = encounterloc_diversity[mapname]
+            print(f"Diversity Level: {diversity}")
             for key in ['land_mons', 'water_mons', 'rock_smash_mons', 'fishing_mons']:
                 if key in encounter:
                     curr_mons = encounter[key]["mons"]
+                    curr_species_list = []
+                    for entry in curr_mons:
+                        curr_species = entry["species"].split("SPECIES_")[1]
+                        curr_species_list.append(curr_species)
                     num_curr_mons = len(curr_mons)
                     print(f"{encounter}-{key} has {num_curr_mons} mons. Sampling the rest.")
                     print(f"Assigning key {key}")
@@ -3034,8 +3163,15 @@ def randomize_encounters(template_file=habitat_template_path, habitat_mapping=ha
                     
                     # Sample the remaining pokemon.
                     # This time we allow for sampling with replacement.
-                    complete = np.random.choice(possible_pokemon, size=12-num_curr_mons, p=probs, replace=True)
-                    complete = complete.tolist()
+                    if diversity == "low" or diversity == "med":
+                        # Cycle through the existing Pokemon.
+                        remaining_slots = 12-num_curr_mons
+                        # Guaranteed at least 12 entries in this list
+                        tape = curr_species_list + curr_species_list + curr_species_list
+                        complete = tape[:remaining_slots]
+                    elif diversity == "high":
+                        complete = np.random.choice(possible_pokemon, size=12-num_curr_mons, p=probs, replace=True)
+                        complete = complete.tolist()
                     print(f"Complete: {complete}")
 
                     if is_pre_elite_four_loc:
