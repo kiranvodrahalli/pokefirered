@@ -1,5 +1,34 @@
-0. Check fishing implementation + allow for fishing rods early. 
+-3. Don't require randomization for rebuilds of the game! (edit makefile to make it an option to not re-randomize).
+-2. Check that we have assigned every base pokemon to a habitat. also check cleffa.
+-1. Rework randomized encounters a bit:
+    - grass encounters: 20/20/10/10/10/10/5/5/4/4/1/1 are the rates.
+      currently, for low/med diversity, slots 11/12 are guaranteed to be not rare.
+    - for high diversity, last slot samples are guaranteed to be present elsewhere.
+    - so there are no truly 1% random pokemon in the game.
+    - rework sampling strategy so that there are some added in slot 11/12 properly.
+    - water: 60/30/5/4/1 - check this. same for rock smash.
+    - fish: old rod: 70/30 | good rod 60/20/20 | super rod 40/30/15/10/5
+    - check fishing level randomization, it seems very off (lv 36 krabby near vermillion?)
+    - pokemon you can only capture with better rods or surf locked in SS Anne?
+    - so take these into account when allowing for rarity levels.
+    - TRY TO MAKE SINGLE EVOs 1% encounters!!
+    - need to align the sampling method so that final encounter rates
+    - align with individual pokemon rarity.
+    - Second: change low/med diversity a bit. 
+    -         - low can be 4 pokemon, but last 2 should be way rarer.
+    -         - for med, 8 is too high. make it 6 max, and last two should be way rarer.
+    -         - for high diversity, 12 is ok as long as some are very rare.
+0. Check fishing implementation + allow for fishing rods early. definitely fix fishing levels, too high.
+   adjust by rod category, etc (but still allow for the 3x random increase, only on good/super rod).
+0.1 For move tutors - remove text that says "this move can only be learned once".
+0.2 Add XD/Gale of Darkness/ Emerald Tutor moves + Egg moves possibilities.
+0.3. Increase num. poke balls? lower cost of poke ball?
 0.5. Check rock smash encounters and update.
+0.6. Re-usable TMs? or nah. (just make TMs re-gettable?)
+0.7. Add premier ball bonus?
+0.8. enable re-purchaseable/ re-gettable TMs
+0.9. Add random 3x increase to max level on rarer encounters - to simulate much more powerful Pokemon
+    similar to legends arceus. mini bosses in wild battles.
 1. Finish implementing Roamer changes. Maybe set so that roamers get EventScript_ReleaseEnd
    mid-game?
 2. Randomize Trainer teams as well, including bosses and adjust leveling. (see above)
@@ -13,9 +42,20 @@
      Could use these to also randomize leveling, and tie leveling to gyms/trainer encounter randomization.
      Gym/trainer/etc battle randomization could also be tied to ecological area where they show up + extras,
      so it feels like a true random version of the game.
+2.3. Can also make it customized to the randomization in the region: use the common / non-common /etc.
+     encounters that are generated to also pick trainer and gym leader encounters.
+     For gym leaders, can also filter by type.
+2.4 S.S. Anne trainers should have Hoenn Pokemon mixed in.
+2.5 Implement SS Anne returning as a function of number of times you beat E4 — not return every time
+    though, maybe once every 10 E4 defeats? Have randomized updated teams as well, and esp. with more
+    "foreign" Pokemon.
 3. Randomize starter choices - allow Gen I/II starters, Pikachu, Eevee. Only one of each
    type in a given set of 3 starters.
+3.1 Could think of a reasonable way to expand starter selection set. but unsure if it's good.
+3.2 Randomize in-game trades too?
 4. Add Hoenn pokemon to SEVII islands postgame.
 5. Add rest of legendaries.
 6. Could consider removing progress blocks and randomizing
    gym leader level ordering.
+7. swap out sprites to have good ones from emerald and good ones from frlg.
+8. Remove 100 lv cap -> 200.  locked behind conditions. increase E4 level + difficulty too.
