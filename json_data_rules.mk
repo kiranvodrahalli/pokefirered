@@ -8,13 +8,18 @@ $(DATA_C_SUBDIR)/items.h: $(DATA_C_SUBDIR)/items.json $(DATA_C_SUBDIR)/items.jso
 
 $(C_BUILDDIR)/item.o: c_dep += $(DATA_C_SUBDIR)/items.h
 
-# TODO(kiranv): Auto-generate wild_encounters.json by running the python randomizer first.
-# Path to your Python script (adjust if necessary)
+# Path to randomizer python script
 PYTHON_SCRIPT = sensible_randomizer2.py
 
-# Rule to generate wild_encounters.json using the Python script
+# Rule to *conditionally* generate wild_encounters.json using the Python script
+ifeq (,$(shell test -f $(DATA_C_SUBDIR)/wild_encounters.json && echo exists))
 $(DATA_C_SUBDIR)/wild_encounters.json: $(PYTHON_SCRIPT)
+	@echo "Generating wild_encounters.json because it does not exist..."
 	python3 $(PYTHON_SCRIPT) > $@
+else
+  $(DATA_C_SUBDIR)/wild_encounters.json:
+	@echo "wild_encounters.json already exists, skipping generation."
+endif
 
 AUTO_GEN_TARGETS += $(DATA_C_SUBDIR)/wild_encounters.h
 $(DATA_C_SUBDIR)/wild_encounters.h: $(DATA_C_SUBDIR)/wild_encounters.json $(DATA_C_SUBDIR)/wild_encounters.json.txt
